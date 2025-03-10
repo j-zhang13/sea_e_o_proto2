@@ -24,6 +24,11 @@ public class player_behavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //prevent movement if dialoague is playing
+        if(DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            return;
+        }
         // move player to move_point
         transform.position = Vector3.MoveTowards(transform.position, move_point.position, speed * Time.deltaTime);
         // if player is at move_point, player can move

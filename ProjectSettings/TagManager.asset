@@ -9,6 +9,7 @@ TagManager:
   - Dialogue
   - MoveablePiece
   - PieceCollisionCheck
+  - Visual Cue
   layers:
   - Default
   - TransparentFX
